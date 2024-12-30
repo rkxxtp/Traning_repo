@@ -63,16 +63,20 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #6bb86f;
+    
 }
 
-header h1{
+ h1{
     color: #4CAF50;
-    margin-left: 37rem;
+    /* margin-left: 37rem; */
     /* margin-top: ; */
     /* background-color: #ccc; */
     font-weight: 800;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    /* padding-top: 1rem; */
+    position: relative;
 
     
 }
@@ -91,12 +95,34 @@ nav ul li{
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 700;
-    color: rgb(120, 120, 114);
+    color: #fff;
+    transition: 0.5s;
+    position: relative;
+    
     
 }
 
+nav ul li::after{
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: -6px;
+    width:90%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: left;
+    
+}
+
+nav ul li:hover::after{
+    transform: scaleX(1);
+}
+
 .list:hover{
-    color: #45a049;
+    color: #000000;
     /* text-decoration: underline; */
 
     
