@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #dedee4;
     margin: 0;
     padding: 0;
 }
@@ -57,4 +57,64 @@ button[type="submit"]:hover {
 
 form div {
     margin-bottom: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: #4CAF50;
+    margin-left: 37rem;
+    /* margin-top: ; */
+    /* background-color: #ccc; */
+    font-weight: 800;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+    
+}
+
+nav ul li{
+    padding-left: 18px;
+    padding-right: 9px;
+    /* background-color: #45a049; */
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(120, 120, 114);
+    
+}
+
+.list:hover{
+    color: #45a049;
+    /* text-decoration: underline; */
+
+    
+}
+
+footer{
+    /* background-color: aqua; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #4CAF50; */
+    margin-left: 9rem;
+    margin-right: 9rem;
+    border-top:2px dotted #8a8585;
+    
+}
+
+.copyright{
+    margin-right: 20px;
 }
